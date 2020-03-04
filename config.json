@@ -2,7 +2,7 @@
     "poolHost": "178.128.219.204",
 
     "coin": "equilibria",
-    "symbol": "SUMO",
+    "symbol": "XEQ",
     "coinUnits": 10000,
     "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 120,
