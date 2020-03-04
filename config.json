@@ -1,17 +1,15 @@
 {
-    "poolHost": "eu.daxminer.com",
+    "poolHost": "178.128.219.204",
 
-    "coin": "sumokoin",
+    "coin": "equilibria",
     "symbol": "SUMO",
-    "coinUnits": 1000000000,
+    "coinUnits": 10000,
     "coinDecimalPlaces": 4,
-    "coinDifficultyTarget": 240,
-	"daemonType": "default",
+    "coinDifficultyTarget": 120,
+	  "daemonType": "default",
     "cnAlgorithm": "cryptonight",
-    "cnVariant": 13,
-    "cnBlobType": 0,
-	"includeHeight": true,
-	"includeAlgo": "cn/r",
+    "cnVariant": 11,
+    "cnBlobType": 5,
     "logging": {
         "files": {
             "level": "info",
@@ -23,12 +21,11 @@
             "colors": true
         }
     },
-
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "Sumoo3hKcrocVfRuLRyASiGt1jjkYafAWgVD7h18nDaf5eK5b6mPBLr1s2TRo8PbGpYuHEG5i9VxvC4t1xxh2FaiAh7sePtLDB3",
-        "intAddressPrefix": 536986,
+        "poolAddress": "Tw1mUEHj19U9CB4CQ3BDC8eNWm79MaHUX7coXtwbJquXdBjUB3zqcskj31RdRL5Y7Zcq62CiHB5wbLeHsGHrC6qv1qqqXh3Q9",
+        "intAddressPrefix": 25247,
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
@@ -93,37 +90,35 @@
             "lastBlockCheckRate": 1
          }
     },
-
-	"payments": {
-		"enabled": true,
-		"interval": 1800,
-		"maxAddresses": 50,
-		"mixin": 48,
-		"priority": 0,
-		"transferFee": 1000,
-		"dynamicTransferFee": true,
-		"minerPayFee": true,
-		"minPayment": 1000000000,
-		"maxPayment": null,
-		"maxTransactionAmount": null,
-		"denomination": 1000000000
-	},
-
-    "blockUnlocker": {
-        "enabled": true,
-        "interval": 30,
-        "depth": 60,
-        "poolFee": 0.3,
-        "devDonation": 0.0,
-        "networkFee": 0.0
-    },
-
+    "payments": {
+  		"enabled": true,
+  		"interval": 1800,
+  		"maxAddresses": 50,
+  		"mixin": 15,
+  		"priority": 0,
+  		"transferFee": 25,
+  		"dynamicTransferFee": true,
+  		"minerPayFee": true,
+  		"minPayment": 5000,
+  		"maxPayment": 300000,
+  		"maxTransactionAmount": null,
+  		"denomination": 100
+  	},
+      "blockUnlocker": {
+          "enabled": true,
+          "interval": 30,
+          "depth": 60,
+          "poolFee": 0.3,
+          "devDonation": 0.0,
+          "networkFee": 0.0,
+  		"useFirstVout": true
+      },
     "api": {
         "enabled": true,
         "hashrateWindow": 600,
         "updateInterval": 5,
         "bindIp": "0.0.0.0",
-        "port": 2005,
+        "port": 443,
         "blocks": 30,
         "payments": 30,
         "password": "123456",
@@ -131,20 +126,20 @@
     },
 
     "daemon": {
-        "host": "62.171.149.62",
-        "port": 19734
+        "host": "127.0.0.1",
+        "port": 9231
     },
 
     "wallet": {
-        "host": "62.171.149.62",
-        "port": 1005
+        "host": "127.0.0.1",
+        "port": 1000
     },
 
     "redis": {
         "host": "127.0.0.1",
         "port": 6379,
         "auth": null,
-        "db": 4,
+        "db": 0,
         "cleanupInterval": 15
     },
 
